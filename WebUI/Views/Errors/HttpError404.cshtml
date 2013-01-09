@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Page not found";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section NavigationListItems
+{
+    <li class="active">
+        @Html.ActionLink("Solve", "Index")
+    </li>
+    <li>
+        @Html.ActionLink("About", "About")
+    </li>
+}
+
+<h2>Sorry, the page you required hasn't been found.</h2>

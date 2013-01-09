@@ -1,0 +1,5 @@
+C:\RS88WP\BSU FAMCS\V сем\Курсовой проект КТС\SLEWebSolution\SystemsOfLinearEquations\bin\Debug\SystemsOfLinearEquations.dll
+C:\RS88WP\BSU FAMCS\V сем\Курсовой проект КТС\SLEWebSolution\SystemsOfLinearEquations\bin\Debug\SystemsOfLinearEquations.pdb
+C:\RS88WP\BSU FAMCS\V сем\Курсовой проект КТС\SLEWebSolution\SystemsOfLinearEquations\obj\Debug\ResolveAssemblyReference.cache
+C:\RS88WP\BSU FAMCS\V сем\Курсовой проект КТС\SLEWebSolution\SystemsOfLinearEquations\obj\Debug\SystemsOfLinearEquations.dll
+C:\RS88WP\BSU FAMCS\V сем\Курсовой проект КТС\SLEWebSolution\SystemsOfLinearEquations\obj\Debug\SystemsOfLinearEquations.pdb

@@ -1,0 +1,2 @@
+C:\RS88WP\BSU FAMCS\V сем\Курсовой проект КТС\SLEWebSolution\WebUI\obj\Debug\ResolveAssemblyReference.cache
+C:\RS88WP\BSU FAMCS\V сем\Курсовой проект КТС\SLEWebSolution\WebUI\obj\Debug\WebUI.dll

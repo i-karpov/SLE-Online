@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Error occured";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section NavigationListItems
+{
+    <li class="active">
+        @Html.ActionLink("Solve", "Index")
+    </li>
+    <li>
+        @Html.ActionLink("About", "About")
+    </li>
+}
+
+<h2>Sorry, some error occured while serving your request.</h2>

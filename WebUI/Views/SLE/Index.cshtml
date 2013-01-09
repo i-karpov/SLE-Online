@@ -1,0 +1,86 @@
+﻿@{
+    ViewBag.Title = "SLE Online";
+}
+
+@section NavigationListItems
+{
+    <li class="active">
+        @Html.ActionLink("Solve", "Index")
+    </li>
+    <li>
+        @Html.ActionLink("About", "About")
+    </li>
+}
+
+
+@using (Html.BeginForm())
+{
+    <div class="dimension">
+        Input dimension here (from 2 up to 16):
+        @Html.TextBox("dimension", 3)
+    </div>
+    
+    <div class="coefficients">
+    </div>
+    
+    
+    <button type="submit" class="solve btn">Solve</button>
+    
+}
+<button class="fill-1 btn">AutoFill I</button>
+<button class="fill-2 btn">AutoFill II</button>
+<button class="continue btn">Continue</button>
+
+@*<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>*@
+<script src="@Url.Content("~/Scripts/jquery-1.5.1.min.js")"></script>
+<script>
+    var clickContinue = function () {
+        $dimensionInput = $("input#dimension");
+        var dimension = parseInt($dimensionInput.val());
+        if (isNaN(dimension) || dimension < 2 || dimension > 16) {
+            // TODO: add my placeholder script
+            $dimensionInput.val('');
+            alert('Incorrect value. Dimension should be a number between 2 and 16');
+            return;
+        }
+
+        // creating and appending coefficients' inputs
+        $divCoefficients = $("div.coefficients");
+        htmlString = "";
+        for (i = 0; i < dimension; i++) {
+            htmlString += "<p>";
+            for (j = 0; j < dimension; j++) {
+                htmlString += "<input type='text' class='coefficient' name='coefficientsA[" + (i * dimension + j) + "]' value='0' />";
+            }
+            htmlString += "&nbsp;<input type='text' class='coefficient' name='coefficientsB[" + i + "]' value='0' />";
+            htmlString += "</p>";
+        }
+        $divCoefficients.html(htmlString);
+        // TODO: add coefficients validation [0-9]*([,.][0-9]{1-16})?
+
+        $("button.continue").hide();
+        $("div.dimension").hide();
+        $divCoefficients.show();
+        $("button.solve").show();
+        $("button.fill-1").show();
+        $("button.fill-2").show();
+
+        $('form').unbind('submit');
+    };
+
+    $(document).ready(function () {
+        $('form').submit(function (e) {
+            e.preventDefault();
+            clickContinue();
+        });
+        $("button.continue").click(clickContinue);
+        $("button.fill-1").click(function () {
+            $("div.coefficients").load('/SLE/Sample1',
+                    { dimension: parseInt($dimensionInput.val()) });
+        });
+        $("button.fill-2").click(function () {
+            $("div.coefficients").load('/SLE/Sample2',
+                    { dimension: parseInt($dimensionInput.val()) });
+        });
+    });
+</script>

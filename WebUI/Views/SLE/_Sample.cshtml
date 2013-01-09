@@ -1,0 +1,17 @@
+﻿@model SystemsOfLinearEquations.ViewModels.SampleModel
+
+@{
+    Layout = null;
+}
+
+@for (int i = 0; i < Model.coefficientsB.Count; i++)
+{
+    <p>
+        @for (int j = 0; j < Model.coefficientsB.Count; j++)
+        {
+<input type='text' class='coefficient' name='coefficientsA[@(i * Model.coefficientsB.Count + j)]'
+                    value='@Model.coefficientsA[i * Model.coefficientsB.Count + j]' />}
+&nbsp;<input type='text' class='coefficient' name='coefficientsB[@i]'
+                    value='@Model.coefficientsB[i]' />
+    </p>
+}

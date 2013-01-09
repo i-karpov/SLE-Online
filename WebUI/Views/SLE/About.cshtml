@@ -1,0 +1,77 @@
+﻿@{
+    ViewBag.Title = "About SLE Online";
+}
+@section NavigationListItems
+{
+    <li>
+        @Html.ActionLink("Solve", "Index")
+    </li>
+    <li class="active">
+        @Html.ActionLink("About", "About")
+    </li>
+}
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In linear algebra, Cramer's rule is an explicit formula for the solution of a system
+    of linear equations with as many equations as unknowns, valid whenever the system
+    has a unique solution. It expresses the solution in terms of the determinants of
+    the (square) coefficient matrix and of matrices obtained from it by replacing one
+    column by the vector of right hand sides of the equations. It is named after Gabriel
+    Cramer (1704–1752), who published the rule for an arbitrary number of unknowns in
+    1750, although Colin Maclaurin also published special cases of the rule in 1748.
+</p>
+<p>
+    Consider a system of <i>n</i> linear equations for <i>n</i> unknowns, represented
+    in matrix multiplication form as follows:
+</p>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td align="left">
+                <dl>
+                    <dd>
+                        <img class="tex" src="//upload.wikimedia.org/math/b/2/9/b291cc43372970e4a41e6baa698b86d2.png"
+                            alt=" Ax = b\,">
+                    </dd>
+                </dl>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    where the <i>n</i> by <i>n</i> matrix
+    <img class="tex" src="//upload.wikimedia.org/math/7/f/c/7fc56270e7a70fa81a5935b72eacbe29.png"
+        alt=" A ">
+    has a nonzero determinant, and the vector
+    <img class="tex" src="//upload.wikimedia.org/math/5/4/2/5420f1619fb676198b6a7d842ee5b87c.png"
+        alt=" x = (x_1, \ldots, x_n)^\mathrm{T} ">
+    is the column vector of the variables.
+</p>
+<p>
+    Then the theorem states that in this case the system has a unique solution, whose
+    individual values for the unknowns are given by:</p>
+<dl>
+    <dd>
+        <img class="tex" src="//upload.wikimedia.org/math/1/b/c/1bc630f43695ef96b162b72d7030b002.png"
+            alt=" x_i = \frac{\det(A_i)}{\det(A)} \qquad i = 1, \ldots, n \, ">
+    </dd>
+</dl>
+<p>
+    where
+    <img class="tex" src="//upload.wikimedia.org/math/e/8/a/e8aaf87d9a5c35b14cfbc370d3fd7b21.png"
+        alt=" A_i ">
+    is the matrix formed by replacing the <i>i</i> th column of
+    <img class="tex" src="//upload.wikimedia.org/math/7/f/c/7fc56270e7a70fa81a5935b72eacbe29.png"
+        alt=" A ">
+    by the column vector
+    <img class="tex" src="//upload.wikimedia.org/math/9/2/e/92eb5ffee6ae2fec3ad71c777531578f.png"
+        alt=" b ">
+    .
+</p>
+<p>
+    The rule holds for systems of equations with coefficients and unknowns in any field, not
+    just in the real numbers . It
+    has recently been shown that Cramer's rule can be implemented in O( <i>n</i> <sup>3</sup>
+    ) time, which is comparable to more common methods
+        of solving systems of linear equations, such as <a title="Gaussian elimination" target="_blank" href="http://en.wikipedia.org/wiki/Gaussian_elimination">
+            Gaussian elimination</a> .
+</p>

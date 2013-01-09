@@ -1,0 +1,9 @@
+C:\RS88WP\BSU FAMCS\V сем\Курсовой проект КТС\SLEWebSolution\WebUI\bin\WebUI.dll
+C:\RS88WP\BSU FAMCS\V сем\Курсовой проект КТС\SLEWebSolution\WebUI\bin\WebUI.pdb
+C:\RS88WP\BSU FAMCS\V сем\Курсовой проект КТС\SLEWebSolution\WebUI\bin\EntityFramework.dll
+C:\RS88WP\BSU FAMCS\V сем\Курсовой проект КТС\SLEWebSolution\WebUI\bin\EntityFramework.xml
+C:\RS88WP\BSU FAMCS\V сем\Курсовой проект КТС\SLEWebSolution\WebUI\obj\Debug\ResolveAssemblyReference.cache
+C:\RS88WP\BSU FAMCS\V сем\Курсовой проект КТС\SLEWebSolution\WebUI\obj\Debug\WebUI.dll
+C:\RS88WP\BSU FAMCS\V сем\Курсовой проект КТС\SLEWebSolution\WebUI\obj\Debug\WebUI.pdb
+C:\RS88WP\BSU FAMCS\V сем\Курсовой проект КТС\SLEWebSolution\WebUI\bin\SystemsOfLinearEquations.dll
+C:\RS88WP\BSU FAMCS\V сем\Курсовой проект КТС\SLEWebSolution\WebUI\bin\SystemsOfLinearEquations.pdb

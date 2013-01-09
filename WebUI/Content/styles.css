@@ -1,0 +1,21 @@
+body
+{
+	padding-top: 60px;
+}
+
+div.coefficients
+{
+	display: none;
+}
+
+input.coefficient 
+{
+	width: 40px;
+}
+
+button.solve,
+button.fill-1,
+button.fill-2
+{
+	display: none;
+}
